@@ -31,8 +31,6 @@ def where(cur,table,columns):
 
 
 def change(array):
-    #input = [2, 'abu@gmail', 'abubakar', 'samad']
-    #output = "2, 'abu@gmail', 'abubakar', 'samad'"
     return (re.search(r'\[(.*?)\]', str(array)).group(1))
 
 def update(conn,cur,table,columns):
